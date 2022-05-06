@@ -14,7 +14,11 @@
 body {
   font-family: var(--main-font);
 }
-
+.header {
+  background: #ffffff;
+  height: 80px;
+  align-items: center;
+}
 .web {
   color: var(--color-font-hover);
 }
@@ -25,21 +29,44 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-
-  /* identical to box height */
   letter-spacing: 0.03em;
 }
-
 .list {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
 }
-
+.nav {
+  display: flex;
+  margin-left: 93px;
+}
+.nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+.nav .link {
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
+  display: block;
+}
+.main-nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
 .contacts {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--color-font-second);
+  display: flex;
+  margin-left: auto;
+}
+.contacts .item:not(:last-child) {
+  margin-right: 50px;
 }
 .link:hover,
 .link:focus,
@@ -52,66 +79,90 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  /* color: var(--color-font-main); */
-  color: currentColor;
+  color: var(--color-font-main);
+}
+.current {
+  color: var(--color-font-hover);
 }
 .hero {
   background-color: var(--color-background-hero);
+  text-align: center;
+  margin-bottom: 94px;
+  height: 600px;
+}
+.hero-box {
+  padding-top: 200px;
 }
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
-  /* or 136% */
-
-  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
   color: #ffffff;
 }
 .hero-btn {
   font-family: var(--main-font);
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   background-color: var(--color-font-hover);
   text-decoration: none;
-
-  /* identical to box height, or 188% */
-
-  display: flex;
+  display: inline-block;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
-
   color: var(--color-background-main);
+  border: transparent;
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--color-btn-hover);
 }
-
+.features {
+  display: flex;
+  margin-bottom: 94px;
+}
+.features .features-box:not(:last-child) {
+  margin-right: 30px;
+}
+.features-box {
+  width: 270px;
+  height: 101px;
+}
 .features-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: var(--color-font-main);
+  margin-bottom: 10px;
+  margin-top: 0px;
 }
 .features-txt {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
-
   letter-spacing: 0.03em;
-
   color: var(--color-font-second);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.works-container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.works-list {
+  display: flex;
 }
 .works-title {
   font-weight: 700;
@@ -119,11 +170,28 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--color-font-main);
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+.works-item {
+  width: 370px;
+  height: 294px;
+  margin-top: 0px;
+  /* margin-right: 30px; */
+  margin-bottom: 0px;
+  margin-left: 0px;
+  /* display: inline; */
+}
+.works-list .works-item:not(:last-child) {
+  margin-right: 30px;
 }
 .team {
   background: var(--color-background-accent);
+  padding-bottom: 94px;
+}
+.team-list {
+  display: flex;
 }
 .team-title {
   font-weight: 700;
@@ -131,34 +199,41 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--color-font-main);
+  margin: 0px 0px 50px;
+  padding: 94px 0px 0px 0px;
 }
 .team-item {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  /* identical to box height */
-
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--color-font-main);
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
 }
 .team-txt {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  /* identical to box height */
-
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--color-font-second);
+  margin-top: 10px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-/* Portfolio page */
-
+.team-list .team-box:not(:last-child) {
+  margin-right: 30px;
+}
+/* .team-box {
+  border-bottom: 1px solid #000;
+  border-top: 1px solid var(--color-font-second);
+} */
 .filter-btn {
   font-family: inherit;
   font-weight: 500;
@@ -171,7 +246,7 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: currentColor;
+  color: var(--color-font-main);
   border-radius: 4px;
   border: none;
 }
@@ -181,40 +256,59 @@ body {
   color: var(--color-background-main);
 }
 .filter {
+  display: flex;
+  padding-top: 94px;
+  margin-bottom: 50px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  /* identical to box height, or 162% */
-
-  text-align: ;
+  justify-content: center;
   letter-spacing: 0.03em;
 
   color: var(--color-font-main);
 }
+.filter .item:not(:last-child) {
+  margin-right: 8px;
+}
+.portfolio {
+  margin-bottom: 84px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
 .portfolio-name {
+  margin-top: 20px;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  /* identical to box height, or 200% */
-
   letter-spacing: 0.06em;
-
   color: var(--color-font-main);
 }
 .portfolio-txt {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.88;
-  /* identical to box height, or 188% */
-
   letter-spacing: 0.03em;
-
   color: var(--color-font-second);
+}
+.portfolio-element {
+  width: 370px;
+  height: 404px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+.portfolio-element:nth-child(3n) {
+  margin-right: 0;
 }
 .footer-item {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
   text-decoration: none;
   letter-spacing: 0.03em;
 
@@ -237,4 +331,21 @@ body {
 }
 .address {
   font-style: normal;
+}
+/* Boxing HW3 */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
