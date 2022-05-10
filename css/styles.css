@@ -257,6 +257,11 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+/* .team-brdr {
+  border-bottom: 1px solid #757575;
+  border-left: 1px solid #757575;
+  border-right: 1px solid #757575;
+} */
 .team-list .team-box:not(:last-child) {
   margin-right: 30px;
 }
@@ -310,7 +315,7 @@ img {
   color: var(--color-font-main);
 }
 .portfolio-box {
-  padding: 20px 24px;
+  padding: 20px 24px;foo
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -347,6 +352,7 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  text-decoration: none;
 
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
